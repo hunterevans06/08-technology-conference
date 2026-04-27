@@ -1,22 +1,14 @@
+// MEDIUM screens
 header {
-	display: flex;
-	flex-wrap: wrap;
-	align-items: center;
-	justify-content: space-between;
-	padding: 1rem 1.5rem;
+	padding: 2rem 2rem 1.5rem;
 }
 
 .logo-wrap {
 	padding-right: 0;
 }
 
-.logo-wrap img {
-	width: 56px;
-	height: 56px;
-}
-
 .brand h1 {
-	font-size: 1.6rem;
+	font-size: 1.85rem;
 }
 
 .nav-toggle {
@@ -26,17 +18,15 @@ header {
 .main-nav {
 	max-height: none;
 	overflow: visible;
-	width: 100%;
-	margin-top: 0.75rem;
 }
 
 .main-nav ul {
-	display: flex;
 	flex-direction: row;
 	justify-content: flex-start;
-	gap: 1.5rem;
-	margin-top: 0;
-	border-top: none;
+	gap: 2.25rem;
+	max-width: $content-width;
+	margin: 0 auto;
+	padding: 0 1.25rem;
 }
 
 .main-nav li {
@@ -44,19 +34,36 @@ header {
 }
 
 .main-nav a {
-	padding: 0.5rem 0;
+	padding: 1rem 0;
+	font-size: 1rem;
+}
+
+main {
+	padding: 2rem;
 }
 
 .hero {
-	height: 75vh;
+	height: 420px;
+}
+
+.hero-text {
+	padding: 2rem 2.5rem;
 }
 
 .hero-text h2 {
-	font-size: 2.75rem;
+	font-size: 2.5rem;
 }
 
 .hero-text p {
-	font-size: 1.1rem;
+	font-size: 1.2rem;
+}
+
+.accent-line {
+	width: 280px;
+}
+
+.speakers h2 {
+	font-size: 2rem;
 }
 
 .card-row {
@@ -71,6 +78,7 @@ header {
 	max-width: 320px;
 }
 
-.speakers h2 {
-	font-size: 2rem;
+.btn {
+	width: auto;
+	min-width: 200px;
 }

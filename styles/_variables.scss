@@ -1,13 +1,24 @@
-$bg: #0d1321;
-$panel: #1d2d44;
-$text: #f0ebd8;
-$muted: #b9c8de;
-$muted-dark: #4a5b75;
-$accent: #f7c548;
-$accent-dark: #d9a823;
+// colors - pale lavender header, gray nav bar, white content, maroon accent
+$bg: #ffffff;
+$bg-soft: #f7f5f8;
+$header-bg: #d8cfd8;
+$nav-bg: #ececec;
+$footer-bg: #ede8ee;
+$panel: #1f2233;
+$text: #2f3038;
+$text-dark: #1f2233;
+$muted: #6b6675;
+$muted-light: #9a92a3;
+$accent: #7a1f2e;
+$accent-dark: #5e1722;
 $card-bg: #ffffff;
-$card-text: #1d2d44;
+$card-soft: #f4f1f5;
+$card-border: #e3e0e6;
 
-$font-main: 'Space Grotesk', Arial, sans-serif;
+// typography - Mulish is clean and readable
+$font-main: 'Mulish', Arial, sans-serif;
 
+// layout
 $max-width: 1200px;
+$content-width: 950px;
+$radius: 4px;

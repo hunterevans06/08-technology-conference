@@ -4,10 +4,10 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Summit 2026 | Technology Conference</title>
-	<meta name="description" content="Summit 2026 is a three day technology conference for developers, designers and innovators.">
+	<meta name="description" content="Summit 2026 is a three day technology conference for developers, designers and innovators in Salt Lake City.">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;500;700;800&amp;display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="styles/styles.css">
 </head>
 <body>
@@ -17,8 +17,8 @@
 				srcset="images/logo.png 1x, images/logo@2x.png 2x, images/logo@3x.png 3x"
 				alt="Summit 2026 logo">
 			<div class="brand">
-				<h1>Summit 2026</h1>
-				<p class="slogan">Where code meets the future.</p>
+				<h1>Summit<span class="word-two">2026</span></h1>
+				<p class="slogan">Salt Lake City UT, September 14&ndash;16</p>
 			</div>
 		</div>
 		<button id="navToggle" class="nav-toggle" aria-label="Open menu" aria-expanded="false">
@@ -26,70 +26,56 @@
 			<span class="bar bar2"></span>
 			<span class="bar bar3"></span>
 		</button>
-		<nav id="mainNav" class="main-nav">
-			<ul>
-				<li><a href="#hero">Home</a></li>
-				<li><a href="#speakers">Speakers</a></li>
-				<li><a href="#schedule">Schedule</a></li>
-				<li><a href="#tickets">Tickets</a></li>
-			</ul>
-		</nav>
 	</header>
+
+	<nav id="mainNav" class="main-nav">
+		<ul>
+			<li><a href="#hero">Home</a></li>
+			<li><a href="#speakers" class="active">Speakers</a></li>
+			<li><a href="#schedule">Schedule</a></li>
+			<li><a href="#tickets">Tickets</a></li>
+		</ul>
+	</nav>
 
 	<main>
 		<section id="hero" class="hero">
 			<video class="hero-video" autoplay loop muted playsinline poster="images/hero-poster.jpg">
 				<source src="videos/hero.mp4" type="video/mp4">
-				<source src="videos/hero.webm" type="video/webm">
+				Your browser does not support the video tag.
 			</video>
 			<div class="hero-text">
-				<h2>Three Days. One Future.</h2>
-				<p>September 14&ndash;16, 2026 &middot; Salt Lake City, UT</p>
-				<a href="#tickets" class="btn">Get Your Pass</a>
+				<h2>Three Days of Tech</h2>
+				<p>Reserve your seat before they&rsquo;re gone</p>
+				<span class="accent-line"></span>
 			</div>
 		</section>
 
 		<section id="speakers" class="speakers">
 			<h2>Featured Speakers</h2>
+			<p class="lead">Get ready to learn from the best minds in modern web development. Our friendly speakers love sharing what they know and they will have plenty of time for your questions.</p>
+			<p class="lead">From research labs to production teams, every speaker on the list builds the kind of stuff you actually want to use. Come say hi after the talks.</p>
 			<div class="card-row">
-				<div class="flip-card" tabindex="0">
-					<div class="flip-inner">
-						<div class="flip-front">
+				<div>
+					<div>
+						<div>
 							<img src="images/speaker1.jpg" alt="Portrait of Maya Chen">
-							<h3>Maya Chen</h3>
-							<p>Lead AI Researcher</p>
-						</div>
-						<div class="flip-back">
-							<h3>Maya Chen</h3>
-							<p>Maya leads applied AI work at NorthStar Labs and has shipped models used by millions of users.</p>
-						</div>
-					</div>
-				</div>
-
-				<div class="flip-card" tabindex="0">
-					<div class="flip-inner">
-						<div class="flip-front">
-							<img src="images/speaker2.jpg" alt="Portrait of Devon Park">
-							<h3>Devon Park</h3>
-							<p>Front-End Architect</p>
-						</div>
-						<div class="flip-back">
-							<h3>Devon Park</h3>
-							<p>Devon writes about web performance and design systems and runs the popular blog HalfPixel.</p>
+							<div class="info">
+								<h3>Maya Chen</h3>
+								<p class="role">Lead AI Researcher</p>
+								<p>Maya leads applied AI work at NorthStar Labs and has shipped models used by millions of users around the world.</p>
+							</div>
 						</div>
 					</div>
 				</div>
-
-				<div class="flip-card" tabindex="0">
-					<div class="flip-inner">
-						<div class="flip-front">
+				<div>
+					<div>
+						<div>
 							<img src="images/speaker3.jpg" alt="Portrait of Priya Rao">
-							<h3>Priya Rao</h3>
-							<p>Cloud Engineer</p>
-						</div>
-						<div class="flip-back">
-							<h3>Priya Rao</h3>
-							<p>Priya helps small teams ship reliable cloud apps without burning out their on-call engineers.</p>
+							<div class="info">
+								<h3>Priya Rao</h3>
+								<p class="role">Cloud Engineer</p>
+								<p>Priya helps small teams ship reliable cloud apps without burning out their on-call engineers.</p>
+							</div>
 						</div>
 					</div>
 				</div>

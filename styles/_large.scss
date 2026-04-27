@@ -1,26 +1,10 @@
-header {
-	max-width: $max-width;
-	margin: 0 auto;
-	padding: 1.25rem 2rem;
-	flex-wrap: nowrap;
-}
-
+// LARGE screens
 .brand h1 {
-	font-size: 1.8rem;
+	font-size: 2rem;
 }
 
 .slogan {
-	font-size: 0.95rem;
-}
-
-.main-nav {
-	width: auto;
-	margin-top: 0;
-}
-
-.main-nav ul {
-	justify-content: flex-start;
-	gap: 2rem;
+	font-size: 1rem;
 }
 
 .main-nav a {
@@ -28,36 +12,40 @@ header {
 }
 
 .hero {
-	height: 85vh;
+	height: 520px;
+}
+
+.hero-text {
+	padding: 2.5rem 3rem;
 }
 
 .hero-text h2 {
-	font-size: 3.5rem;
+	font-size: 3rem;
 }
 
 .hero-text p {
 	font-size: 1.25rem;
 }
 
+.accent-line {
+	width: 320px;
+}
+
 .speakers {
-	padding: 4rem 2rem;
+	padding: 3.5rem 0 1.5rem;
 }
 
 .speakers h2 {
-	font-size: 2.4rem;
-	margin-bottom: 2.5rem;
+	font-size: 2.25rem;
+	margin-bottom: 1.25rem;
 }
 
 .card-row {
 	flex-wrap: nowrap;
+	gap: 2rem;
 }
 
 .flip-card {
-	width: 30%;
-	max-width: 340px;
-	height: 400px;
-}
-
-.flip-front img {
-	height: 270px;
+	width: 32%;
+	max-width: 320px;
 }
