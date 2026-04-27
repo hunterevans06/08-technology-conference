@@ -1,0 +1,253 @@
+header {
+	background: $panel;
+	padding: 1rem;
+	position: relative;
+}
+
+.logo-wrap {
+	display: flex;
+	align-items: center;
+	gap: 0.75rem;
+	padding-right: 3rem;
+}
+
+.logo-wrap img {
+	width: 48px;
+	height: 48px;
+}
+
+.brand h1 {
+	font-size: 1.4rem;
+	color: $accent;
+	font-weight: 700;
+	letter-spacing: 0.02em;
+}
+
+.slogan {
+	font-size: 0.85rem;
+	color: $muted;
+	margin-top: 2px;
+}
+
+.nav-toggle {
+	position: absolute;
+	top: 1.25rem;
+	right: 1rem;
+	width: 36px;
+	height: 36px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	padding: 6px 4px;
+}
+
+.bar {
+	display: block;
+	width: 100%;
+	height: 3px;
+	background: $accent;
+	border-radius: 2px;
+	transition: transform 0.3s ease, opacity 0.2s ease;
+}
+
+.nav-toggle.open .bar1 {
+	transform: translateY(10px) rotate(45deg);
+}
+
+.nav-toggle.open .bar2 {
+	opacity: 0;
+}
+
+.nav-toggle.open .bar3 {
+	transform: translateY(-10px) rotate(-45deg);
+}
+
+.main-nav {
+	max-height: 0;
+	overflow: hidden;
+	transition: max-height 0.3s ease;
+}
+
+.main-nav.open {
+	max-height: 400px;
+}
+
+.main-nav ul {
+	display: flex;
+	flex-direction: column;
+	margin-top: 1rem;
+	border-top: 1px solid $muted;
+}
+
+.main-nav li {
+	border-bottom: 1px solid rgba(185, 200, 222, 0.3);
+}
+
+.main-nav a {
+	display: block;
+	padding: 0.85rem 0.25rem;
+	color: $text;
+	font-weight: 500;
+}
+
+.main-nav a:hover,
+.main-nav a:focus {
+	color: $accent;
+}
+
+.hero {
+	position: relative;
+	width: 100%;
+	height: 70vh;
+	min-height: 380px;
+	overflow: hidden;
+}
+
+.hero-video {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	z-index: 0;
+}
+
+.hero::after {
+	content: "";
+	position: absolute;
+	inset: 0;
+	background: rgba(13, 19, 33, 0.55);
+	z-index: 1;
+}
+
+.hero-text {
+	position: relative;
+	z-index: 2;
+	color: $text;
+	text-align: center;
+	padding: 2rem 1rem;
+	max-width: 90%;
+	margin: 0 auto;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+.hero-text h2 {
+	font-size: 2rem;
+	margin-bottom: 0.5rem;
+	color: $text;
+}
+
+.hero-text p {
+	color: $text;
+	margin-bottom: 1.25rem;
+}
+
+.btn {
+	display: inline-block;
+	background: $accent;
+	color: $bg;
+	padding: 0.75rem 1.5rem;
+	font-weight: 700;
+	border-radius: 4px;
+}
+
+.btn:hover,
+.btn:focus {
+	background: $accent-dark;
+}
+
+.speakers {
+	padding: 2.5rem 1rem;
+	max-width: $max-width;
+	margin: 0 auto;
+}
+
+.speakers h2 {
+	text-align: center;
+	font-size: 1.75rem;
+	color: $accent;
+	margin-bottom: 1.75rem;
+}
+
+.card-row {
+	display: flex;
+	flex-direction: column;
+	gap: 1.25rem;
+	align-items: center;
+}
+
+.flip-card {
+	width: 100%;
+	max-width: 280px;
+	height: 360px;
+	perspective: 1000px;
+}
+
+.flip-inner {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	transition: transform 0.6s;
+	transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-inner,
+.flip-card:focus-within .flip-inner {
+	transform: rotateY(180deg);
+}
+
+.flip-front,
+.flip-back {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+	border-radius: 8px;
+	overflow: hidden;
+	background: $card-bg;
+	color: $card-text;
+	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+}
+
+.flip-front img {
+	width: 100%;
+	height: 240px;
+	object-fit: cover;
+}
+
+.flip-front h3 {
+	font-size: 1.2rem;
+	padding: 0.75rem 1rem 0.25rem;
+}
+
+.flip-front p {
+	padding: 0 1rem 1rem;
+	color: $muted-dark;
+}
+
+.flip-back {
+	transform: rotateY(180deg);
+	padding: 1.5rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	background: $panel;
+	color: $text;
+}
+
+.flip-back h3 {
+	color: $accent;
+	margin-bottom: 0.75rem;
+	font-size: 1.2rem;
+}
+
+footer {
+	background: $panel;
+	color: $muted;
+	text-align: center;
+	padding: 1.25rem 1rem;
+	margin-top: 2rem;
+}
